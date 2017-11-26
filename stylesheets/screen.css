@@ -414,9 +414,10 @@ h1, .h1 {
   padding-bottom: 2rem;
   font-weight: 900;
   letter-spacing: 0.025rem;
+  line-height: 1.2;
 }
 
-/* line 307, ../sass/_layout.scss */
+/* line 308, ../sass/_layout.scss */
 h2, .h2 {
   font-size: 1rem;
   padding-bottom: 10px;
@@ -426,7 +427,7 @@ h2, .h2 {
   letter-spacing: 1px;
 }
 
-/* line 316, ../sass/_layout.scss */
+/* line 317, ../sass/_layout.scss */
 h3, .h3 {
   font-size: 1.2rem;
   padding-bottom: 10px;
@@ -436,26 +437,26 @@ h3, .h3 {
   letter-spacing: 0.025rem;
 }
 
-/* line 325, ../sass/_layout.scss */
+/* line 326, ../sass/_layout.scss */
 .date {
   color: #aaaaaa;
   line-height: 1.4rem;
   display: block;
 }
 
-/* line 331, ../sass/_layout.scss */
+/* line 332, ../sass/_layout.scss */
 a {
   color: #4d77be;
   text-decoration: none;
 }
-/* line 335, ../sass/_layout.scss */
+/* line 336, ../sass/_layout.scss */
 a:hover, a:active {
   color: #4d77be;
   text-decoration: underline;
 }
 
 /* Icons Headings */
-/* line 344, ../sass/_layout.scss */
+/* line 345, ../sass/_layout.scss */
 i {
   position: relative;
   display: inline-block;
@@ -463,7 +464,7 @@ i {
   height: 3em;
   margin-right: 8px;
 }
-/* line 351, ../sass/_layout.scss */
+/* line 352, ../sass/_layout.scss */
 i:after {
   width: 3em;
   height: 3em;
@@ -474,14 +475,14 @@ i:after {
   z-index: 0;
 }
 
-/* line 362, ../sass/_layout.scss */
+/* line 363, ../sass/_layout.scss */
 i + h2 {
   display: inline-block;
   line-height: 2.25;
   vertical-align: top;
 }
 
-/* line 368, ../sass/_layout.scss */
+/* line 369, ../sass/_layout.scss */
 i:before {
   font-size: 1.75em;
   width: 1.75em;

@@ -21,6 +21,7 @@ $blue:					#4d77be;
 	height: 100vh;
 	margin-left: calc(100% /3);
 	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
     background-color: $background-gray;
 
     @media #{$break-mobile-large} {
@@ -302,6 +303,7 @@ h1, .h1 {
     padding-bottom: 2rem;
     font-weight: 900;
     letter-spacing: 0.025rem;
+    line-height: 1.2;
 }
 
 h2, .h2 {
