@@ -1,0 +1,494 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Breakpoints */
+/* Basic layout elements */
+/* line 19, ../sass/_layout.scss */
+#writing {
+  width: calc(100% * 2/3);
+  height: 100vh;
+  margin-left: calc(100% /3);
+  overflow-y: scroll;
+  background-color: #fafafa;
+}
+@media screen and (max-width: 767px) {
+  /* line 19, ../sass/_layout.scss */
+  #writing {
+    background: transparent;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* line 33, ../sass/_layout.scss */
+#map {
+  width: calc(100% /3);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  /* line 33, ../sass/_layout.scss */
+  #map {
+    height: 100vh;
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: -1;
+  }
+}
+
+/* line 49, ../sass/_layout.scss */
+section,
+.section {
+  padding: 50px;
+  line-height: 25px;
+  font-size: 13px;
+  width: auto;
+  max-width: 100%;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+/* line 60, ../sass/_layout.scss */
+section .box,
+.section .box {
+  opacity: 0.15;
+  transition: all .75s ease-in-out;
+  -moz-transition: all .75s ease-in-out;
+  -webkit-transition: all .75s ease-in-out;
+}
+/* line 67, ../sass/_layout.scss */
+section .box:nth-child(1),
+.section .box:nth-child(1) {
+  -webkit-transition-delay: .15s;
+}
+/* line 68, ../sass/_layout.scss */
+section .box:nth-child(2),
+.section .box:nth-child(2) {
+  -webkit-transition-delay: .3s;
+}
+/* line 69, ../sass/_layout.scss */
+section .box:nth-child(3),
+.section .box:nth-child(3) {
+  -webkit-transition-delay: .45s;
+}
+/* line 70, ../sass/_layout.scss */
+section .box:nth-child(4),
+.section .box:nth-child(4) {
+  -webkit-transition-delay: .6s;
+}
+/* line 71, ../sass/_layout.scss */
+section .box:nth-child(5),
+.section .box:nth-child(5) {
+  -webkit-transition-delay: .75s;
+}
+/* line 72, ../sass/_layout.scss */
+section .box:nth-child(6),
+.section .box:nth-child(6) {
+  -webkit-transition-delay: .9s;
+}
+@media screen and (max-width: 767px) {
+  /* line 49, ../sass/_layout.scss */
+  section,
+  .section {
+    display: block;
+    margin-bottom: 100vh;
+    background: white;
+    max-width: calc(100% - 40px);
+  }
+}
+
+/* line 83, ../sass/_layout.scss */
+section {
+  opacity: 0.25;
+  border-bottom: 1px solid #dddddd;
+  padding: 100px 50px;
+}
+@media screen and (max-width: 767px) {
+  /* line 83, ../sass/_layout.scss */
+  section {
+    padding: 50px 20px;
+  }
+}
+
+/* line 93, ../sass/_layout.scss */
+section.active,
+section.active .box {
+  opacity: 1;
+}
+
+/* line 98, ../sass/_layout.scss */
+section:last-child {
+  border-bottom: none;
+  margin-bottom: 200px;
+}
+
+/* These are the sections with the location icons and headlings */
+/* line 104, ../sass/_layout.scss */
+.section {
+  margin-bottom: -120px;
+}
+@media screen and (max-width: 767px) {
+  /* line 104, ../sass/_layout.scss */
+  .section {
+    padding: 50px 20px;
+    margin-bottom: -65px;
+  }
+}
+
+/* line 113, ../sass/_layout.scss */
+.grid {
+  margin-top: 4em;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  grid-auto-flow: dense;
+}
+/* line 122, ../sass/_layout.scss */
+.grid .box {
+  background-size: cover;
+  background-position: center;
+  grid-column-start: auto;
+  /* These are all our potential image box sizes */
+  /* Mobile styles */
+}
+/* line 128, ../sass/_layout.scss */
+.grid .box--1x1 {
+  padding-bottom: 100%;
+}
+/* line 131, ../sass/_layout.scss */
+.grid .box--1x2 {
+  grid-row-end: span 2;
+}
+/* line 134, ../sass/_layout.scss */
+.grid .box--2x1 {
+  grid-column-end: span 2;
+  padding-bottom: 50%;
+}
+/* line 138, ../sass/_layout.scss */
+.grid .box--2x2 {
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+  padding-bottom: 100%;
+}
+/* line 143, ../sass/_layout.scss */
+.grid .box--3x1 {
+  grid-column-end: span 3;
+  padding-bottom: 33.33%;
+}
+/* line 147, ../sass/_layout.scss */
+.grid .box--3x2 {
+  grid-column-end: span 3;
+  padding-bottom: 66.66%;
+}
+/* line 151, ../sass/_layout.scss */
+.grid .box--3x3 {
+  grid-column-end: span 3;
+  padding-bottom: 100%;
+}
+@media screen and (max-width: 767px) {
+  /* line 156, ../sass/_layout.scss */
+  .grid .box--1x1, .grid .box--1x2, .grid .box--2x2, .grid .box--3x3 {
+    grid-column-end: span 3;
+    padding-bottom: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 165, ../sass/_layout.scss */
+  .grid .box--2x1, .grid .box--3x1, .grid .box--3x2 {
+    grid-column-end: span 3;
+    padding-bottom: 66.66%;
+  }
+}
+
+/* A mess of styles for browsers that don't support grid */
+/* line 177, ../sass/_layout.scss */
+.no-cssgrid .grid,
+.cssgridlegacy .grid {
+  display: block;
+  font-size: 0;
+  margin-top: 50px;
+}
+/* line 184, ../sass/_layout.scss */
+.no-cssgrid .grid .box,
+.cssgridlegacy .grid .box {
+  width: calc(100% /3 - 6px);
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  vertical-align: top;
+  border: 2px solid white;
+  background-color: #fafafa;
+  /* Mobile styles */
+}
+/* line 193, ../sass/_layout.scss */
+.no-cssgrid .grid .box--1x1,
+.cssgridlegacy .grid .box--1x1 {
+  width: calc(100% /3 - 6px);
+  padding-bottom: 33.33%;
+}
+/* line 197, ../sass/_layout.scss */
+.no-cssgrid .grid .box--1x2,
+.cssgridlegacy .grid .box--1x2 {
+  width: calc(100% /3 - 6px);
+  padding-bottom: 33.33%;
+}
+/* line 201, ../sass/_layout.scss */
+.no-cssgrid .grid .box--2x1,
+.cssgridlegacy .grid .box--2x1 {
+  width: calc(100% *2/3 - 8px);
+  padding-bottom: 33.33%;
+}
+/* line 205, ../sass/_layout.scss */
+.no-cssgrid .grid .box--2x2,
+.cssgridlegacy .grid .box--2x2 {
+  width: calc(100% /3 - 6px);
+  padding-bottom: 33.33%;
+}
+/* line 209, ../sass/_layout.scss */
+.no-cssgrid .grid .box--3x1,
+.cssgridlegacy .grid .box--3x1 {
+  width: calc(100% - 10px);
+  padding-bottom: 33.33%;
+}
+/* line 213, ../sass/_layout.scss */
+.no-cssgrid .grid .box--3x2,
+.cssgridlegacy .grid .box--3x2 {
+  width: calc(100% - 10px);
+  padding-bottom: 66.66%;
+}
+/* line 217, ../sass/_layout.scss */
+.no-cssgrid .grid .box--3x3,
+.cssgridlegacy .grid .box--3x3 {
+  width: calc(100% - 10px);
+  padding-bottom: 100%;
+}
+@media screen and (max-width: 767px) {
+  /* line 222, ../sass/_layout.scss */
+  .no-cssgrid .grid .box--1x1, .no-cssgrid .grid .box--1x2, .no-cssgrid .grid .box--2x2, .no-cssgrid .grid .box--3x3,
+  .cssgridlegacy .grid .box--1x1,
+  .cssgridlegacy .grid .box--1x2,
+  .cssgridlegacy .grid .box--2x2,
+  .cssgridlegacy .grid .box--3x3 {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 231, ../sass/_layout.scss */
+  .no-cssgrid .grid .box--2x1, .no-cssgrid .grid .box--3x1, .no-cssgrid .grid .box--3x2,
+  .cssgridlegacy .grid .box--2x1,
+  .cssgridlegacy .grid .box--3x1,
+  .cssgridlegacy .grid .box--3x2 {
+    width: 100%;
+    padding-bottom: 66.66%;
+  }
+}
+
+/* line 242, ../sass/_layout.scss */
+.end {
+  text-align: center;
+}
+/* line 245, ../sass/_layout.scss */
+.end .h1, .end .h2 {
+  color: #444444;
+  padding-bottom: 1rem;
+}
+/* line 250, ../sass/_layout.scss */
+.end p {
+  color: #c9c9c9;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+/* line 255, ../sass/_layout.scss */
+.end p a {
+  color: #c9c9c9;
+  text-decoration: underline;
+}
+/* line 259, ../sass/_layout.scss */
+.end p a:hover, .end p a:active {
+  color: #aaaaaa;
+}
+
+/* Type */
+/* line 269, ../sass/_layout.scss */
+html,
+body {
+  font-family: -apple-system,  BlinkMacSystemFont,  "Segoe UI",  Roboto,  Oxygen-Sans,  Ubuntu,  Cantarell,  "Helvetica Neue",  sans-serif;
+  font-size: 18px;
+  color: #444444;
+}
+
+/* line 284, ../sass/_layout.scss */
+p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 1em;
+}
+
+/* line 290, ../sass/_layout.scss */
+em {
+  font-style: italic;
+}
+
+/* line 294, ../sass/_layout.scss */
+h1, h2, h3, h4 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 299, ../sass/_layout.scss */
+h1, .h1 {
+  display: block;
+  font-size: 1.75rem;
+  padding-bottom: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.025rem;
+}
+
+/* line 307, ../sass/_layout.scss */
+h2, .h2 {
+  font-size: 1rem;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #ccccb5;
+  letter-spacing: 1px;
+}
+
+/* line 316, ../sass/_layout.scss */
+h3, .h3 {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+  font-weight: 800;
+  color: #1f1f1f;
+  display: block;
+  letter-spacing: 0.025rem;
+}
+
+/* line 325, ../sass/_layout.scss */
+.date {
+  color: #aaaaaa;
+  line-height: 1.4rem;
+  display: block;
+}
+
+/* line 331, ../sass/_layout.scss */
+a {
+  color: #4d77be;
+  text-decoration: none;
+}
+/* line 335, ../sass/_layout.scss */
+a:hover, a:active {
+  color: #4d77be;
+  text-decoration: underline;
+}
+
+/* Icons Headings */
+/* line 344, ../sass/_layout.scss */
+i {
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  margin-right: 8px;
+}
+/* line 351, ../sass/_layout.scss */
+i:after {
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  content: "";
+  background-color: #ccccb5;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* line 362, ../sass/_layout.scss */
+i + h2 {
+  display: inline-block;
+  line-height: 2.25;
+  vertical-align: top;
+}
+
+/* line 368, ../sass/_layout.scss */
+i:before {
+  font-size: 1.75em;
+  width: 1.75em;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  color: white;
+  z-index: 1;
+}

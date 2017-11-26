@@ -1,0 +1,377 @@
+/* Breakpoints */
+
+// ----------------------------
+// Variables
+// ----------------------------
+
+$break-mobile-large:    "screen and (max-width: 767px)";
+$black:					#444444;
+$background-gray:		#fafafa;
+$mid-gray:				#aaaaaa;
+$caption-gray:			#c9c9c9;
+$light-gray:			#dddddd;
+$heading-gray:			#ccccb5;
+$blue:					#4d77be;
+
+
+/* Basic layout elements */
+
+#writing {
+	width: calc(100% * 2/3);
+	height: 100vh;
+	margin-left: calc(100% /3);
+	overflow-y: scroll;
+    background-color: $background-gray;
+
+    @media #{$break-mobile-large} {
+    	background: transparent;
+    	width: 100%;
+    	margin-left: 0;
+    }
+}
+
+#map {
+	width: calc(100% /3);
+	height: 100vh;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+
+    @media #{$break-mobile-large} {
+		height: 100vh;
+		width: 100%;
+		display: block;
+		position: fixed;
+		z-index: -1;
+	}
+}
+
+section,
+.section {
+    padding: 50px;
+    line-height: 25px;
+    font-size: 13px;
+    width: auto;
+    max-width: 100%;
+	transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+
+	.box {
+		opacity: 0.15;
+		transition: all .75s ease-in-out;
+		-moz-transition: all .75s ease-in-out;
+		-webkit-transition: all .75s ease-in-out;
+	}
+
+	.box:nth-child(1){ -webkit-transition-delay: .15s; }
+	.box:nth-child(2){ -webkit-transition-delay: .3s; }
+	.box:nth-child(3){ -webkit-transition-delay: .45s; }
+	.box:nth-child(4){ -webkit-transition-delay: .6s; }
+	.box:nth-child(5){ -webkit-transition-delay: .75s; }
+	.box:nth-child(6){ -webkit-transition-delay: .9s; }
+
+
+	@media #{$break-mobile-large} {
+		display: block;
+		margin-bottom: 100vh;
+		background: white;
+		max-width: calc(100% - 40px);
+	}
+}
+
+section {
+	opacity: 0.25;
+	border-bottom: 1px solid $light-gray;
+	padding: 100px 50px;
+
+	@media #{$break-mobile-large} {
+		padding: 50px 20px;
+	}
+}
+
+section.active,
+section.active .box {
+    opacity: 1;
+}
+
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 200px;
+}
+
+/* These are the sections with the location icons and headlings */
+.section {
+	margin-bottom: -120px;
+
+	@media #{$break-mobile-large} {
+		padding: 50px 20px;
+		margin-bottom: -65px;
+	}
+}
+
+.grid {
+	margin-top: 4em;
+	width: 100%;
+	display: -ms-grid;
+  	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 5px;
+	grid-auto-flow: dense;
+
+	.box {
+		background-size: cover;
+		background-position: center;
+		grid-column-start: auto;
+
+		/* These are all our potential image box sizes */
+		&--1x1 {
+			padding-bottom: 100%;
+		}
+		&--1x2 {
+			grid-row-end: span 2;
+		}
+		&--2x1 {
+			grid-column-end: span 2;
+			padding-bottom: 50%;
+		}
+		&--2x2 {
+			grid-column-end: span 2;
+			grid-row-end: span 2;
+			padding-bottom: 100%;
+		}
+		&--3x1 {
+			grid-column-end: span 3;
+			padding-bottom: 33.33%;
+		}
+		&--3x2 {
+			grid-column-end: span 3;
+			padding-bottom: 66.66%;
+		}
+		&--3x3 {
+			grid-column-end: span 3;
+			padding-bottom: 100%;
+		}
+		/* Mobile styles */
+		&--1x1,
+		&--1x2,
+		&--2x2,
+		&--3x3 {
+			@media #{$break-mobile-large} {
+				grid-column-end: span 3;
+				padding-bottom: 100%;
+			}
+		}
+		&--2x1,
+		&--3x1,
+		&--3x2 {
+			@media #{$break-mobile-large} {
+				grid-column-end: span 3;
+				padding-bottom: 66.66%;
+			}
+		}
+	}
+}
+
+/* A mess of styles for browsers that don't support grid */
+.no-cssgrid .grid,
+.cssgridlegacy .grid
+ {
+	display: block;
+	font-size: 0;
+	margin-top: 50px;
+
+	.box {
+		width: calc(100% /3 - 6px);
+		background-size: cover;
+  		background-position: center;
+  		display: inline-block;
+ 		vertical-align: top;
+ 		border: 2px solid white;
+ 		background-color: $background-gray;
+
+		&--1x1 {
+			width: calc(100% /3 - 6px);
+			padding-bottom: 33.33%;
+		}
+		&--1x2 {
+			width: calc(100% /3 - 6px);
+			padding-bottom: 33.33%;
+		}
+		&--2x1 {
+			width: calc(100% *2/3 - 8px);
+			padding-bottom: 33.33%;
+		}
+		&--2x2 {
+			width: calc(100% /3 - 6px);
+			padding-bottom: 33.33%;
+		}
+		&--3x1 {
+			width: calc(100% - 10px);
+			padding-bottom: 33.33%;
+		}
+		&--3x2 {
+			width: calc(100% - 10px);
+			padding-bottom: 66.66%;
+		}
+		&--3x3 {
+			width: calc(100% - 10px);
+			padding-bottom: 100%;
+		}
+		/* Mobile styles */
+		&--1x1,
+		&--1x2,
+		&--2x2,
+		&--3x3 {
+			@media #{$break-mobile-large} {
+				width: 100%;
+				padding-bottom: 100%;
+			}
+		}
+		&--2x1,
+		&--3x1,
+		&--3x2 {
+			@media #{$break-mobile-large} {
+				width: 100%;
+				padding-bottom: 66.66%;
+			}
+		}
+	}
+}
+
+.end {
+	text-align: center;
+
+	.h1, .h2 {
+		color: $black;
+		padding-bottom: 1rem;
+	}
+
+	p {
+		color: $caption-gray;
+		font-size: 0.8rem;
+		margin-bottom: 0.5rem;
+
+		a {
+			color: $caption-gray;
+			text-decoration: underline;
+
+			&:hover,
+			&:active {
+				color: $mid-gray;
+			}
+		}
+	}
+
+}
+
+/* Type */
+html,
+body {
+	font-family: -apple-system, 
+		BlinkMacSystemFont, 
+		"Segoe UI", 
+		Roboto, 
+		Oxygen-Sans, 
+		Ubuntu, 
+		Cantarell, 
+		"Helvetica Neue", 
+		sans-serif;
+	font-size: 18px;
+	color: $black;
+}
+
+p {
+	font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 1em;
+}
+
+em {
+	font-style: italic;
+}
+
+h1, h2, h3, h4 {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1, .h1 {
+	display: block;
+	font-size: 1.75rem;
+    padding-bottom: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.025rem;
+}
+
+h2, .h2 {
+	font-size: 1rem;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: $heading-gray;
+    letter-spacing: 1px;
+}
+
+h3, .h3 {
+	font-size: 1.2rem;
+    padding-bottom: 10px;
+    font-weight: 800;
+    color: #1f1f1f;
+    display: block;
+    letter-spacing: 0.025rem;
+}
+
+.date {
+	color: $mid-gray;
+	line-height: 1.4rem;
+	display: block;
+}
+
+a {
+	color: $blue;
+	text-decoration: none;
+
+	&:hover,
+	&:active {
+		color: $blue;
+		text-decoration: underline;
+	}
+}
+
+/* Icons Headings */
+
+i {
+	position: relative;
+	display: inline-block;
+	width: 3em;
+	height: 3em;
+	margin-right: 8px;
+
+	&:after {
+	width: 3em;
+	height: 3em;
+	position: absolute;
+	content: "";
+	background-color: $heading-gray;
+	border-radius: 50%;
+	z-index: 0;
+	}
+}
+
+i+h2{
+	display: inline-block;
+	line-height: 2.25;
+	vertical-align: top;
+}
+
+i:before {
+font-size: 1.75em;
+width: 1.75em;
+text-align: center;
+position: absolute;
+left: 0;
+top: 0.35em;
+color: white;
+z-index: 1;
+}

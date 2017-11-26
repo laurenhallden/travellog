@@ -1,0 +1,199 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Travel Log</title>
+  <meta name="description" content="An interactive map of everywhere I traveled this year.">
+  <meta name="author" content="Lauren Hallden">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/images/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="manifest" href="/images/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="viewport" content="width=device-width" initial-scale=1>
+
+  <!-- Metatags -->
+  <meta property="og:title" content="Travel Log" />
+  <meta property="og:url" content="your_url_here" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="An interactive map of everywhere I traveled this year." />
+  <meta property="og:image" content="images/travellog.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Travel Log" />
+  <meta name="tiwtter:creator" content="@your_twitter_handle" />
+  <meta name="twitter:description" content="An interactive map of everywhere I traveled this year." />
+  <meta name="twitter:url" content="your_url_here" />
+  <meta property="og:image" content="images/travellog.jpg" />
+
+  <!-- Mapbox GL styles -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.1/mapbox-gl.css' rel='stylesheet' />
+
+  <script src="js/vendor/modernizer.js"></script>
+
+  <!-- All our css -->
+  <link href="stylesheets/mapglyphs.css" rel="stylesheet">
+  <link href="stylesheets/screen.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div id="map"> <!-- this is where our map will go -->
+    </div> <!-- end map -->
+
+    <div id="writing"> <!-- and this is where all the writing and pictures go -->
+
+      <section id="intro" class='active'>
+        <h1>My Travel Log: 2017</h1>
+        <p>Say a little something about why you were traveling!</p>
+      </section>
+
+      <div class="section">
+        <i class="mg map-us-pa"></i>
+        <h2>Pennsylvania</h2>
+      </div>
+
+      <section id='location-one'>
+        <h3>Location One</h3>
+        <p>This place was pretty great.</p>
+        <span class="date">Jan 1</span>
+
+        <div class="grid">
+          <div class="box box--3x1" style="background-image: url(images/image-3x1.jpg)">
+          </div>
+          <div class="box box--2x1" style="background-image: url(images/image-2x1.jpg)">
+          </div>
+          <div class="box box--1x1" style="background-image: url(images/image-1x1.jpg)">
+          </div>
+        </div><!-- end grid -->
+
+      </section>
+
+      <section id='location-two'>
+        <h3>Location Two</h3>
+        <p>But this place was even better.</p>
+        <span class="date">Jan 16</span>
+
+        <div class="grid">
+          <div class="box box--3x1" style="background-image: url(images/image-3x1.jpg)">
+          </div>
+          <div class="box box--2x1" style="background-image: url(images/image-2x1.jpg)">
+          </div>
+          <div class="box box--1x1" style="background-image: url(images/image-1x1.jpg)">
+          </div>
+        </div><!-- end grid -->
+
+      </section>
+      
+      
+      <!-- This is the end! -->
+      <div class="section end">
+        <h4 class="h2">The end</h4>
+        <p>Travel Log designed by <a href="http://www.laurenhallden.com">Lauren Hallden</a>.</p>
+        <p>Want to make one of these?<br />
+          <a title="Travel Log GitHub Repo" href="https://github.com/laurenhallden/travellog">Grab the code</a>
+        </p>
+      </div>
+      
+    </div> <!-- end writing -->
+
+  </div> <!-- end container -->
+
+  <!-- JS -->
+  <script src="js/vendor/jquery.js"></script>
+
+  <!-- Here's where we give the map all of its settings and locations -->
+  <script>
+    mapboxgl.accessToken = 'your_token'; // Add your mapbox token here
+
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/outdoors-v9',
+      center: [-75.401710, 41.221494], // your starting coordiantes
+      zoom: 12.5,
+      bearing: 35,
+      pitch: 40,
+      duration: 8000
+    });
+
+    map.scrollZoom.disable();
+
+    var chapters = {
+
+      // give each location the same name as its section id, and set its coordinates here
+      'location-one': {
+        center: [-75.401710, 41.221494],
+          zoom: 12.5,
+          bearing: 35,
+          pitch: 40,
+          duration: 8000
+      },
+      'location-two': {
+          center: [-75.748217, 40.740883],
+          zoom: 11,
+          bearing: 55,
+          pitch: 70
+      }
+  };
+
+  // Every time the page scrolls, we'll check which section is on the screen
+  $('#writing').scroll(function() {
+    var arrPlaces = $("section");
+
+    arrPlaces.each(function() {
+      var offset = $(this).offset();
+      var bottom = offset.top + $(this).outerHeight();
+      var windowHeight = $(window).height();
+      var theId = $(this).attr('id');
+      if ($(window).width() > 767) {
+        console.log(theId);
+        if (offset.top < 200 && bottom > 200) {
+          setActiveChapter(theId);
+        }
+      }
+      else if (offset.top < windowHeight) {
+        // this is for mobile; we trigger the map move as soon as a section enters the screen
+        setActiveChapter(theId);
+      }
+      else {
+        $(this).removeClass('active');
+      }
+    });
+  });
+
+  var activeChapterName = 'intro';
+
+  function setActiveChapter(theId) {
+    $('#' + theId).addClass('active');
+    if (theId === activeChapterName) return;
+    map.flyTo(chapters[theId]);
+    activeChapterName = theId;
+  }
+
+</script>
+
+</body>
+</html>

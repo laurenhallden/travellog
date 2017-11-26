@@ -1,0 +1,1115 @@
+/*!
+ *  Map Glyphs 1.0 by @tedgrajeda - http://mapglyphs.com - @mapglyphs
+ *  License - http://mapglyphs.com/license (CC BY-ND 3.0)
+ */
+@font-face {
+	font-family: 'MapGlyphs';
+	src:url('../fonts/MapGlyphs.eot');
+	src:url('../fonts/MapGlyphs.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MapGlyphs.ttf') format('truetype'),
+		url('../fonts/MapGlyphs.woff') format('woff'),
+		url('../fonts/MapGlyphs.svg#mapglyphs') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.mg {
+  display: inline-block;
+  font-family: 'MapGlyphs';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mg-fw{
+	width:1.2em;
+	text-align:center
+}
+
+.mg-2x {
+  font-size: 2em;
+}
+.mg-3x {
+  font-size: 3em;
+}
+.mg-4x {
+  font-size: 4em;
+}
+.mg-5x {
+  font-size: 6em;
+}
+.mg-6x {
+  font-size: 8em;
+}
+
+/*Maps*/
+.map-sh-tc:before {
+	content: "\e755";
+}
+.map-sh-ai:before {
+	content: "\e756";
+}
+.map-sh-sh:before {
+	content: "\e757";
+}
+.map-sc:before {
+	content: "\e758";
+}
+.map-mv:before {
+	content: "\e759";
+}
+.map-mu:before {
+	content: "\e75a";
+}
+.map-io:before {
+	content: "\e75b";
+}
+.map-mo:before {
+	content: "\e75c";
+}
+.map-mh:before {
+	content: "\e75d";
+}
+.map-km:before {
+	content: "\e75e";
+}
+.map-je:before {
+	content: "\e75f";
+}
+.map-im:before {
+	content: "\e760";
+}
+.map-gg:before {
+	content: "\e761";
+}
+.map-yt:before {
+	content: "\e762";
+}
+.map-ag:before {
+	content: "\e763";
+}
+.map-vg:before {
+	content: "\e72d";
+}
+.map-vi:before {
+	content: "\e72e";
+}
+.map-bl:before {
+	content: "\e72f";
+}
+.map-ai:before {
+	content: "\e730";
+}
+.map-cw:before {
+	content: "\e731";
+}
+.map-bq:before {
+	content: "\e732";
+}
+.map-aw:before {
+	content: "\e733";
+}
+.map-sx:before {
+	content: "\e734";
+}
+.map-ms:before {
+	content: "\e735";
+}
+.map-mf:before {
+	content: "\e736";
+}
+.map-ky:before {
+	content: "\e737";
+}
+.map-kn:before {
+	content: "\e738";
+}
+.map-bm:before {
+	content: "\e739";
+}
+.map-ar-alt:before {
+	content: "\e73a";
+}
+.map-bv:before {
+	content: "\e73b";
+}
+.map-pn:before {
+	content: "\e73c";
+}
+.map-pf:before {
+	content: "\e73d";
+}
+.map-nu:before {
+	content: "\e73e";
+}
+.map-pw:before {
+	content: "\e73f";
+}
+.map-fm:before {
+	content: "\e740";
+}
+.map-tk:before {
+	content: "\e741";
+}
+.map-nr:before {
+	content: "\e742";
+}
+.map-ck:before {
+	content: "\e743";
+}
+.map-ki:before {
+	content: "\e744";
+}
+.map-to:before {
+	content: "\e745";
+}
+.map-tv:before {
+	content: "\e746";
+}
+.map-mp:before {
+	content: "\e747";
+}
+.map-wf:before {
+	content: "\e748";
+}
+.map-nf:before {
+	content: "\e749";
+}
+.map-cc:before {
+	content: "\e74a";
+}
+.map-gu:before {
+	content: "\e74b";
+}
+.map-cx:before {
+	content: "\e74c";
+}
+.map-as:before {
+	content: "\e74d";
+}
+.map-ws:before {
+	content: "\e74e";
+}
+.map-pt-alt:before {
+	content: "\e74f";
+}
+.map-es-alt:before {
+	content: "\e750";
+}
+.map-gi:before {
+	content: "\e751";
+}
+.map-va:before {
+	content: "\e752";
+}
+.map-hk:before {
+	content: "\e753";
+}
+.map-ie-alt:before {
+	content: "\e754";
+}
+.map-sg:before {
+	content: "\e72c";
+}
+.map-mc:before {
+	content: "\e72a";
+}
+.map-sm:before {
+	content: "\e72b";
+}
+.map-mm:before {
+	content: "\e727";
+}
+.map-sy:before {
+	content: "\e728";
+}
+.map-st:before {
+	content: "\e729";
+}
+.map-ph:before {
+	content: "\e6e5";
+}
+.map-id:before {
+	content: "\e6e7";
+}
+.map-my:before {
+	content: "\e6e9";
+}
+.map-bn:before {
+	content: "\e6eb";
+}
+.map-tl:before {
+	content: "\e6ed";
+}
+.map-th:before {
+	content: "\e6ef";
+}
+.map-kh:before {
+	content: "\e6f1";
+}
+.map-vn:before {
+	content: "\e6f3";
+}
+.map-la:before {
+	content: "\e6f5";
+}
+.map-jp:before {
+	content: "\e6f7";
+}
+.map-tw:before {
+	content: "\e6f9";
+}
+.map-kr:before {
+	content: "\e6fb";
+}
+.map-kp:before {
+	content: "\e6fd";
+}
+.map-bd:before {
+	content: "\e6fe";
+}
+.map-bt:before {
+	content: "\e6ff";
+}
+.map-np:before {
+	content: "\e700";
+}
+.map-lk:before {
+	content: "\e701";
+}
+.map-in:before {
+	content: "\e702";
+}
+.map-mn:before {
+	content: "\e703";
+}
+.map-tj:before {
+	content: "\e704";
+}
+.map-kg:before {
+	content: "\e705";
+}
+.map-pk:before {
+	content: "\e706";
+}
+.map-af:before {
+	content: "\e707";
+}
+.map-tm:before {
+	content: "\e708";
+}
+.map-uz:before {
+	content: "\e709";
+}
+.map-kz:before {
+	content: "\e70a";
+}
+.map-cn:before {
+	content: "\e70b";
+}
+.map-il:before {
+	content: "\e70c";
+}
+.map-ps:before {
+	content: "\e70d";
+}
+.map-lb:before {
+	content: "\e70e";
+}
+.map-kw:before {
+	content: "\e70f";
+}
+.map-bh:before {
+	content: "\e710";
+}
+.map-qa:before {
+	content: "\e711";
+}
+.map-om:before {
+	content: "\e712";
+}
+.map-ye:before {
+	content: "\e713";
+}
+.map-ae:before {
+	content: "\e714";
+}
+.map-rw:before {
+	content: "\e715";
+}
+.map-re:before {
+	content: "\e716";
+}
+.map-cv:before {
+	content: "\e717";
+}
+.map-gq:before {
+	content: "\e718";
+}
+.map-dj:before {
+	content: "\e719";
+}
+.map-bi:before {
+	content: "\e71a";
+}
+.map-sz:before {
+	content: "\e71b";
+}
+.map-ls:before {
+	content: "\e71c";
+}
+.map-eh:before {
+	content: "\e71d";
+}
+.map-er:before {
+	content: "\e71e";
+}
+.map-ug:before {
+	content: "\e71f";
+}
+.map-gw:before {
+	content: "\e720";
+}
+.map-gm:before {
+	content: "\e721";
+}
+.map-sl:before {
+	content: "\e722";
+}
+.map-lr:before {
+	content: "\e723";
+}
+.map-gh:before {
+	content: "\e724";
+}
+.map-tg:before {
+	content: "\e725";
+}
+.map-bj:before {
+	content: "\e726";
+}
+.map-glb-ar:before {
+	content: "\e6ee";
+}
+.map-glb-pa:before {
+	content: "\e6f0";
+}
+.map-glb-at:before {
+	content: "\e6f2";
+}
+.map-glb-sa:before {
+	content: "\e6f4";
+}
+.map-glb-na:before {
+	content: "\e6f6";
+}
+.map-glb-an:before {
+	content: "\e6f8";
+}
+.map-glb-me:before {
+	content: "\e6fa";
+}
+.map-glb-oc:before {
+	content: "\e6fc";
+}
+.map-glb-af:before {
+	content: "\e6ec";
+}
+.map-glb-as:before {
+	content: "\e6e6";
+}
+.map-glb-eu:before {
+	content: "\e6e8";
+}
+.map-glb-am:before {
+	content: "\e6ea";
+}
+.map-wrld-an:before {
+	content: "\e6e4";
+}
+.map-wrld-ca:before {
+	content: "\e6d9";
+}
+.map-wrld-se:before {
+	content: "\e6da";
+}
+.map-wrld-as:before {
+	content: "\e6db";
+}
+.map-wrld-me:before {
+	content: "\e6dc";
+}
+.map-wrld-af:before {
+	content: "\e6dd";
+}
+.map-wrld-eu:before {
+	content: "\e6de";
+}
+.map-wrld-am:before {
+	content: "\e6df";
+}
+.map-wrld-na:before {
+	content: "\e6e0";
+}
+.map-wrld-sa:before {
+	content: "\e6e1";
+}
+.map-wrld-oc:before {
+	content: "\e6e2";
+}
+.map-wrld-alt:before {
+	content: "\e6e3";
+}
+.map-wrld:before {
+	content: "\e6d8";
+}
+.map-ao:before {
+	content: "\e6b2";
+}
+.map-bf:before {
+	content: "\e6b3";
+}
+.map-bw:before {
+	content: "\e6b4";
+}
+.map-cd:before {
+	content: "\e6b5";
+}
+.map-cf:before {
+	content: "\e6b6";
+}
+.map-cg:before {
+	content: "\e6b7";
+}
+.map-ci:before {
+	content: "\e6b8";
+}
+.map-cm:before {
+	content: "\e6b9";
+}
+.map-dz:before {
+	content: "\e6ba";
+}
+.map-eg:before {
+	content: "\e6bb";
+}
+.map-et:before {
+	content: "\e6bc";
+}
+.map-ga:before {
+	content: "\e6bd";
+}
+.map-gn:before {
+	content: "\e6be";
+}
+.map-iq:before {
+	content: "\e6bf";
+}
+.map-ir:before {
+	content: "\e6c0";
+}
+.map-jo:before {
+	content: "\e6c1";
+}
+.map-ke:before {
+	content: "\e6c2";
+}
+.map-ly:before {
+	content: "\e6c3";
+}
+.map-ma:before {
+	content: "\e6c4";
+}
+.map-mg:before {
+	content: "\e6c5";
+}
+.map-ml:before {
+	content: "\e6c6";
+}
+.map-mr:before {
+	content: "\e6c7";
+}
+.map-mw:before {
+	content: "\e6c8";
+}
+.map-mz:before {
+	content: "\e6c9";
+}
+.map-na:before {
+	content: "\e6ca";
+}
+.map-ne:before {
+	content: "\e6cb";
+}
+.map-ng:before {
+	content: "\e6cc";
+}
+.map-sa:before {
+	content: "\e6cd";
+}
+.map-sd:before {
+	content: "\e6ce";
+}
+.map-sn:before {
+	content: "\e6cf";
+}
+.map-so:before {
+	content: "\e6d0";
+}
+.map-ss:before {
+	content: "\e6d1";
+}
+.map-td:before {
+	content: "\e6d2";
+}
+.map-tn:before {
+	content: "\e6d3";
+}
+.map-tz:before {
+	content: "\e6d4";
+}
+.map-za:before {
+	content: "\e6d5";
+}
+.map-zm:before {
+	content: "\e6d6";
+}
+.map-zw:before {
+	content: "\e6d7";
+}
+.map-fo:before {
+	content: "\e695";
+}
+.map-ge:before {
+	content: "\e696";
+}
+.map-am:before {
+	content: "\e697";
+}
+.map-az:before {
+	content: "\e698";
+}
+.map-ca-nb:before {
+	content: "\e699";
+}
+.map-mt:before {
+	content: "\e65a";
+}
+.map-ad:before {
+	content: "\e65b";
+}
+.map-li:before {
+	content: "\e65c";
+}
+.map-lu:before {
+	content: "\e65d";
+}
+.map-sj:before {
+	content: "\e65e";
+}
+.map-lt:before {
+	content: "\e65f";
+}
+.map-lv:before {
+	content: "\e660";
+}
+.map-ee:before {
+	content: "\e661";
+}
+.map-ru:before {
+	content: "\e662";
+}
+.map-gl:before {
+	content: "\e663";
+}
+.map-no:before {
+	content: "\e664";
+}
+.map-se:before {
+	content: "\e665";
+}
+.map-fi:before {
+	content: "\e666";
+}
+.map-cy:before {
+	content: "\e667";
+}
+.map-xk:before {
+	content: "\e668";
+}
+.map-rs:before {
+	content: "\e669";
+}
+.map-hr:before {
+	content: "\e66a";
+}
+.map-ba:before {
+	content: "\e66b";
+}
+.map-me:before {
+	content: "\e66c";
+}
+.map-mk:before {
+	content: "\e66d";
+}
+.map-by:before {
+	content: "\e66e";
+}
+.map-si:before {
+	content: "\e66f";
+}
+.map-hu:before {
+	content: "\e670";
+}
+.map-md:before {
+	content: "\e671";
+}
+.map-ro:before {
+	content: "\e672";
+}
+.map-al:before {
+	content: "\e673";
+}
+.map-bg:before {
+	content: "\e674";
+}
+.map-sk:before {
+	content: "\e675";
+}
+.map-cz:before {
+	content: "\e676";
+}
+.map-ua:before {
+	content: "\e677";
+}
+.map-tr:before {
+	content: "\e678";
+}
+.map-gr:before {
+	content: "\e679";
+}
+.map-dk:before {
+	content: "\e67a";
+}
+.map-at:before {
+	content: "\e67b";
+}
+.map-nl:before {
+	content: "\e67c";
+}
+.map-be:before {
+	content: "\e67d";
+}
+.map-ch:before {
+	content: "\e67e";
+}
+.map-pl:before {
+	content: "\e67f";
+}
+.map-pt:before {
+	content: "\e680";
+}
+.map-es:before {
+	content: "\e681";
+}
+.map-it:before {
+	content: "\e682";
+}
+.map-fr:before {
+	content: "\e683";
+}
+.map-de:before {
+	content: "\e684";
+}
+.map-ie:before {
+	content: "\e685";
+}
+.map-is:before {
+	content: "\e686";
+}
+.map-uk:before {
+	content: "\e687";
+}
+.map-uk-sc:before {
+	content: "\e69a";
+}
+.map-uk-en:before {
+	content: "\e69b";
+}
+.map-uk-wa:before {
+	content: "\e69c";
+}
+.map-uk-ni:before {
+	content: "\e69d";
+}
+.map-aq:before {
+	content: "\e691";
+}
+.map-tf:before {
+	content: "\e692";
+}
+.map-hm:before {
+	content: "\e693";
+}
+.map-gs:before {
+	content: "\e694";
+}
+.map-au:before {
+	content: "\e635";
+}
+.map-au-wa:before {
+	content: "\e69e";
+}
+.map-au-nt:before {
+	content: "\e69f";
+}
+.map-au-ql:before {
+	content: "\e6a0";
+}
+.map-au-sa:before {
+	content: "\e6a1";
+}
+.map-au-nw:before {
+	content: "\e6a2";
+}
+.map-au-vc:before {
+	content: "\e6a3";
+}
+.map-au-ts:before {
+	content: "\e6a4";
+}
+.map-au-ac:before {
+	content: "\e6a5";
+}
+.map-fj:before {
+	content: "\e636";
+}
+.map-nc:before {
+	content: "\e637";
+}
+.map-nz:before {
+	content: "\e638";
+}
+.map-pg:before {
+	content: "\e639";
+}
+.map-sb:before {
+	content: "\e63a";
+}
+.map-vu:before {
+	content: "\e63b";
+}
+.map-ar:before {
+	content: "\e63c";
+}
+.map-bo:before {
+	content: "\e63d";
+}
+.map-br:before {
+	content: "\e63e";
+}
+.map-bb:before {
+	content: "\e688";
+}
+.map-bs:before {
+	content: "\e63f";
+}
+.map-bz:before {
+	content: "\e640";
+}
+.map-ca:before {
+	content: "\e641";
+}
+.map-ca-yt:before {
+	content: "\e6a6";
+}
+.map-ca-bc:before {
+	content: "\e6a7";
+}
+.map-ca-nt:before {
+	content: "\e6a8";
+}
+.map-ca-nu:before {
+	content: "\e6a9";
+}
+.map-ca-ab:before {
+	content: "\e6aa";
+}
+.map-ca-sk:before {
+	content: "\e6ab";
+}
+.map-ca-mb:before {
+	content: "\e6ac";
+}
+.map-ca-on:before {
+	content: "\e6ad";
+}
+.map-ca-qc:before {
+	content: "\e6ae";
+}
+.map-ca-pe:before {
+	content: "\e6af";
+}
+.map-ca-nl:before {
+	content: "\e6b0";
+}
+.map-ca-ns:before {
+	content: "\e6b1";
+}
+.map-cl:before {
+	content: "\e642";
+}
+.map-co:before {
+	content: "\e643";
+}
+.map-cr:before {
+	content: "\e644";
+}
+.map-cu:before {
+	content: "\e645";
+}
+.map-do:before {
+	content: "\e646";
+}
+.map-dm:before {
+	content: "\e689";
+}
+.map-ec:before {
+	content: "\e647";
+}
+.map-fk:before {
+	content: "\e648";
+}
+.map-gf:before {
+	content: "\e649";
+}
+.map-gd:before {
+	content: "\e68a";
+}
+.map-gp:before {
+	content: "\e68b";
+}
+.map-gt:before {
+	content: "\e64a";
+}
+.map-gy:before {
+	content: "\e64b";
+}
+.map-hn:before {
+	content: "\e64c";
+}
+.map-ht:before {
+	content: "\e64d";
+}
+.map-jm:before {
+	content: "\e64e";
+}
+.map-mq:before {
+	content: "\e68c";
+}
+.map-mx:before {
+	content: "\e64f";
+}
+.map-ni:before {
+	content: "\e650";
+}
+.map-pa:before {
+	content: "\e651";
+}
+.map-pe:before {
+	content: "\e652";
+}
+.map-pm:before {
+	content: "\e68d";
+}
+.map-pr:before {
+	content: "\e653";
+}
+.map-py:before {
+	content: "\e654";
+}
+.map-sr:before {
+	content: "\e655";
+}
+.map-sv:before {
+	content: "\e656";
+}
+.map-vc:before {
+	content: "\e68e";
+}
+.map-lc:before {
+	content: "\e68f";
+}
+.map-tt:before {
+	content: "\e657";
+}
+.map-tc:before {
+	content: "\e690";
+}
+.map-uy:before {
+	content: "\e658";
+}
+.map-ve:before {
+	content: "\e659";
+}
+.map-us-ak:before {
+	content: "\e601";
+}
+.map-us-al:before {
+	content: "\e602";
+}
+.map-us-ar:before {
+	content: "\e603";
+}
+.map-us-az:before {
+	content: "\e604";
+}
+.map-us-ca:before {
+	content: "\e605";
+}
+.map-us-co:before {
+	content: "\e606";
+}
+.map-us-ct:before {
+	content: "\e607";
+}
+.map-us-de:before {
+	content: "\e608";
+}
+.map-us-fl:before {
+	content: "\e609";
+}
+.map-us-ga:before {
+	content: "\e60a";
+}
+.map-us-hi:before {
+	content: "\e60b";
+}
+.map-us-ia:before {
+	content: "\e60c";
+}
+.map-us-id:before {
+	content: "\e60d";
+}
+.map-us-il:before {
+	content: "\e60e";
+}
+.map-us-in:before {
+	content: "\e60f";
+}
+.map-us-ks:before {
+	content: "\e610";
+}
+.map-us-ky:before {
+	content: "\e611";
+}
+.map-us-la:before {
+	content: "\e612";
+}
+.map-us-ma:before {
+	content: "\e613";
+}
+.map-us-md:before {
+	content: "\e614";
+}
+.map-us-me:before {
+	content: "\e615";
+}
+.map-us-mi:before {
+	content: "\e616";
+}
+.map-us-mn:before {
+	content: "\e617";
+}
+.map-us-mo:before {
+	content: "\e618";
+}
+.map-us-ms:before {
+	content: "\e619";
+}
+.map-us-mt:before {
+	content: "\e61a";
+}
+.map-us-nc:before {
+	content: "\e61b";
+}
+.map-us-nd:before {
+	content: "\e61c";
+}
+.map-us-ne:before {
+	content: "\e61d";
+}
+.map-us-nh:before {
+	content: "\e61e";
+}
+.map-us-nj:before {
+	content: "\e61f";
+}
+.map-us-nm:before {
+	content: "\e620";
+}
+.map-us-nv:before {
+	content: "\e621";
+}
+.map-us-ny:before {
+	content: "\e622";
+}
+.map-us-oh:before {
+	content: "\e623";
+}
+.map-us-ok:before {
+	content: "\e624";
+}
+.map-us-or:before {
+	content: "\e625";
+}
+.map-us-pa:before {
+	content: "\e626";
+}
+.map-us-ri:before {
+	content: "\e627";
+}
+.map-us-sc:before {
+	content: "\e628";
+}
+.map-us-sd:before {
+	content: "\e629";
+}
+.map-us-tn:before {
+	content: "\e62a";
+}
+.map-us-tx:before {
+	content: "\e62b";
+}
+.map-us-ut:before {
+	content: "\e62c";
+}
+.map-us-va:before {
+	content: "\e62d";
+}
+.map-us-vt:before {
+	content: "\e62e";
+}
+.map-us-wa:before {
+	content: "\e62f";
+}
+.map-us-wi:before {
+	content: "\e630";
+}
+.map-us-wv:before {
+	content: "\e631";
+}
+.map-us-wy:before {
+	content: "\e632";
+}
+.map-us-dc:before {
+	content: "\e634";
+}
+.map-us:before {
+	content: "\e600";
+}
+.map-us-alt:before {
+	content: "\e633";
+}
