@@ -12,8 +12,8 @@ An interactive map of everywhere you've traveled. You can see an example (of a v
 - Copy these files to your own URL.
 - Give each of your locations its own section, with a unique **section id**.
 - Make an **image grid** for each location! I'm using the new CSS Grid here (with some fallbacks for browsers that don't quite support it yet), and it's really easy to make your images line up nicely:
-    - The grid is 3 columns and as many rows it needs to fit your images. Use the class names to assign each image a size in the gid. For example, an image with the classes `box box--3x1` will take up 3 columns and one row. Images will be cropped to fit their boxes automatically.
-    - Your options are: `1x1`, `1x2,` `2x1`, `2x2`, `3x1`, `3x2`, and `3x3`.
+    - The grid is 3 columns and as many rows it needs to fit your images. Use the class names to assign each image a size in the gid. For example, an image with the classes `box box--3x1` will take up 3 columns and one row. There's no need to resize a bunch of images -- they'll be cropped to fit their boxes automatically.
+    - Your options are: `1x1`, `1x2`, `2x1`, `2x2`, `3x1`, `3x2`, and `3x3`.
     - You can save your images in the `image` folder.
 - Near the end of the `index.html` file, add your **Mabbox API Key**.
 - Also near the end of the `index.html` file, add an **array item** for each of your sections. Plunk the location's coordinates here. You can also play with pitch (the camera angle as it looks down at your map), bearing (the direction the camera is looking from), and duration (how fast or slow you want the map to "fly" to this location).
