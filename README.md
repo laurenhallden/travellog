@@ -15,9 +15,9 @@ An interactive map of everywhere you've traveled, with room for image galleries,
     - The grid is 3 columns and as many rows it needs to fit your images. Use the class names to assign each image a size in the gid. For example, an image with the classes `box box--3x1` will take up 3 columns and one row. There's no need to resize a bunch of images -- they'll be cropped to fit their boxes automatically.
     - Your options are: `1x1`, `1x2`, `2x1`, `2x2`, `3x1`, `3x2`, and `3x3`.
     - You can save your images in the `image` folder.
-- Near the end of the `index.html` file, add your **Mabbox API Key**.
+- Near the end of the `index.html` file, add your **Mapbox API Key**.
 - Also near the end of the `index.html` file, add an **array item** for each of your sections. Plunk the location's coordinates here. You can also play with pitch (the camera angle as it looks down at your map), bearing (the direction the camera is looking from), and duration (how fast or slow you want the map to "fly" to this location).
-- To add a section header with an icon for a state or country, just give the icon the class name as defined on [Mapglyphs](http://mapglyphs.com/cheatsheet).
+- To add a section header with an icon for a state or country, just give the icon the right class name as defined by [Mapglyphs](http://mapglyphs.com/cheatsheet).
 - If you want to share your Travel Log on social media, don't forget to add your Log's url, your Twitter handle, etc in the **meta tags** section at the top of the `index.html` file.
 
 You're done! Have fun!
