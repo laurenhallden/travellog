@@ -6,7 +6,7 @@ An interactive map of everywhere you've traveled. You can see an example (of a v
 - A place to host these files.
 - A [Mapbox](https://www.mapbox.com/) API key (you can register for one for free!).
 - A bunch of pictures you want to display.
-- The latitude and longitude of all the places you want the site to travel to. (You can find these coordinates by googling a place and dropping a pin nearby, but be warned: Google and MapBox display coordinates differently, so once you look them up you'll have to reverse the oder of the latitude and longitude for this project).
+- The latitude and longitude of all the places you want the site to travel to. (You can find these coordinates by googling a place and dropping a pin nearby, but be warned: Google and Mapbox display coordinates differently, so once you look them up you'll have to reverse the oder of the latitude and longitude for this project).
 
 ## What you'll do
 - Copy these files to your own URL.
