@@ -328,7 +328,7 @@ section:last-child {
 /* line 216, ../sass/_layout.scss */
 .no-cssgrid .grid .box--1x1 div,
 .cssgridlegacy .grid .box--1x1 div {
-  padding-bottom: 33.33%;
+  padding-bottom: 100%;
 }
 /* line 220, ../sass/_layout.scss */
 .no-cssgrid .grid .box--1x2,
@@ -338,7 +338,7 @@ section:last-child {
 /* line 222, ../sass/_layout.scss */
 .no-cssgrid .grid .box--1x2 div,
 .cssgridlegacy .grid .box--1x2 div {
-  padding-bottom: 33.33%;
+  padding-bottom: 100%;
 }
 /* line 226, ../sass/_layout.scss */
 .no-cssgrid .grid .box--2x1,
@@ -348,7 +348,7 @@ section:last-child {
 /* line 228, ../sass/_layout.scss */
 .no-cssgrid .grid .box--2x1 div,
 .cssgridlegacy .grid .box--2x1 div {
-  padding-bottom: 33.33%;
+  padding-bottom: calc(50% - 2px);
 }
 /* line 232, ../sass/_layout.scss */
 .no-cssgrid .grid .box--2x2,
@@ -358,7 +358,7 @@ section:last-child {
 /* line 234, ../sass/_layout.scss */
 .no-cssgrid .grid .box--2x2 div,
 .cssgridlegacy .grid .box--2x2 div {
-  padding-bottom: 33.33%;
+  padding-bottom: 100%;
 }
 /* line 238, ../sass/_layout.scss */
 .no-cssgrid .grid .box--3x1,

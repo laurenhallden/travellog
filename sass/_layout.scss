@@ -214,25 +214,25 @@ section:last-child {
 		&--1x1 {
 			width: calc(100% /3 - 6px);
 			div {
-				padding-bottom: 33.33%;
+				padding-bottom: 100%;
 			}
 		}
 		&--1x2 {
 			width: calc(100% /3 - 6px);
 			div {
-				padding-bottom: 33.33%;
+				padding-bottom: 100%;
 			}
 		}
 		&--2x1 {
 			width: calc(100% *2/3 - 8px);
 			div {
-				padding-bottom: 33.33%;
+				padding-bottom: calc(50% - 2px);
 			}
 		}
 		&--2x2 {
 			width: calc(100% /3 - 6px);
 			div {
-				padding-bottom: 33.33%;
+				padding-bottom: 100%;
 			}
 		}
 		&--3x1 {
