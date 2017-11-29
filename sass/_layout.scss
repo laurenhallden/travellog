@@ -121,37 +121,53 @@ section:last-child {
 	grid-auto-flow: dense;
 
 	.box {
-		background-size: cover;
-		background-position: center;
 		grid-column-start: auto;
+
+		.image-wrapper {
+			background-position: center;
+			background-size: cover;			
+		}
 
 		/* These are all our potential image box sizes */
 		&--1x1 {
-			padding-bottom: 100%;
+			/* Padding needs to be applied to inner divs */
+			.image-wrapper {
+				padding-bottom: 100%;
+			}
 		}
 		&--1x2 {
 			grid-row-end: span 2;
 		}
 		&--2x1 {
 			grid-column-end: span 2;
-			padding-bottom: 50%;
+			.image-wrapper {
+				padding-bottom: calc(50% - 2px);
+			}
 		}
 		&--2x2 {
 			grid-column-end: span 2;
 			grid-row-end: span 2;
-			padding-bottom: 100%;
+			.image-wrapper {
+				padding-bottom: 100%;
+			}
 		}
 		&--3x1 {
 			grid-column-end: span 3;
-			padding-bottom: 33.33%;
+			.image-wrapper {
+				padding-bottom: 33.33%;
+			}
 		}
 		&--3x2 {
 			grid-column-end: span 3;
-			padding-bottom: 66.66%;
+			.image-wrapper {
+				padding-bottom: 66.66%;
+			}
 		}
 		&--3x3 {
 			grid-column-end: span 3;
-			padding-bottom: 100%;
+			.image-wrapper {
+				padding-bottom: 100%;
+			}
 		}
 		/* Mobile styles */
 		&--1x1,
@@ -160,7 +176,9 @@ section:last-child {
 		&--3x3 {
 			@media #{$break-mobile-large} {
 				grid-column-end: span 3;
-				padding-bottom: 100%;
+				.image-wrapper {
+					padding-bottom: 100%;
+				}
 			}
 		}
 		&--2x1,
@@ -168,7 +186,9 @@ section:last-child {
 		&--3x2 {
 			@media #{$break-mobile-large} {
 				grid-column-end: span 3;
-				padding-bottom: 66.66%;
+				.image-wrapper {
+					padding-bottom: 66.66%;
+				}
 			}
 		}
 	}
@@ -184,40 +204,57 @@ section:last-child {
 
 	.box {
 		width: calc(100% /3 - 6px);
-		background-size: cover;
-  		background-position: center;
-  		display: inline-block;
- 		vertical-align: top;
- 		border: 2px solid white;
- 		background-color: $background-gray;
+		display: inline-block;
+		vertical-align: top;
+		border: 2px solid white;
+		background-color: $background-gray;
+
+ 		.image-wrapper {
+			background-size: cover;
+			background-position: center;
+ 		}
 
 		&--1x1 {
 			width: calc(100% /3 - 6px);
-			padding-bottom: 33.33%;
+			.image-wrapper {
+				padding-bottom: 100%;
+			}
 		}
 		&--1x2 {
 			width: calc(100% /3 - 6px);
-			padding-bottom: 33.33%;
+			.image-wrapper {
+				padding-bottom: 100%;
+			}
 		}
 		&--2x1 {
 			width: calc(100% *2/3 - 8px);
-			padding-bottom: 33.33%;
+			.image-wrapper {
+				padding-bottom: calc(50% - 2px);
+			}
 		}
 		&--2x2 {
 			width: calc(100% /3 - 6px);
-			padding-bottom: 33.33%;
+			.image-wrapper {
+				padding-bottom: 100%;
+			}
 		}
 		&--3x1 {
 			width: calc(100% - 10px);
-			padding-bottom: 33.33%;
+			.image-wrapper {
+				padding-bottom: 33.33%;
+			}
 		}
 		&--3x2 {
 			width: calc(100% - 10px);
-			padding-bottom: 66.66%;
+			.image-wrapper {
+				padding-bottom: 66.66%;
+			}
 		}
 		&--3x3 {
 			width: calc(100% - 10px);
-			padding-bottom: 100%;
+			.image-wrapper {
+				padding-bottom: 100%;
+			}
 		}
 		/* Mobile styles */
 		&--1x1,
@@ -226,7 +263,9 @@ section:last-child {
 		&--3x3 {
 			@media #{$break-mobile-large} {
 				width: 100%;
-				padding-bottom: 100%;
+				.image-wrapper {
+					padding-bottom: 100%;
+				}
 			}
 		}
 		&--2x1,
@@ -234,7 +273,9 @@ section:last-child {
 		&--3x2 {
 			@media #{$break-mobile-large} {
 				width: 100%;
-				padding-bottom: 66.66%;
+				.image-wrapper {
+					padding-bottom: 66.66%;
+				}
 			}
 		}
 	}
@@ -295,6 +336,7 @@ em {
 h1, h2, h3, h4 {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	line-height: 1.4;
 }
 
 h1, .h1 {
