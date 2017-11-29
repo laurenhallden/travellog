@@ -475,9 +475,10 @@ em {
 h1, h2, h3, h4 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.4;
 }
 
-/* line 338, ../sass/_layout.scss */
+/* line 339, ../sass/_layout.scss */
 h1, .h1 {
   display: block;
   font-size: 1.75rem;
@@ -487,7 +488,7 @@ h1, .h1 {
   line-height: 1.2;
 }
 
-/* line 347, ../sass/_layout.scss */
+/* line 348, ../sass/_layout.scss */
 h2, .h2 {
   font-size: 1rem;
   padding-bottom: 10px;
@@ -497,7 +498,7 @@ h2, .h2 {
   letter-spacing: 1px;
 }
 
-/* line 356, ../sass/_layout.scss */
+/* line 357, ../sass/_layout.scss */
 h3, .h3 {
   font-size: 1.2rem;
   padding-bottom: 10px;
@@ -507,26 +508,26 @@ h3, .h3 {
   letter-spacing: 0.025rem;
 }
 
-/* line 365, ../sass/_layout.scss */
+/* line 366, ../sass/_layout.scss */
 .date {
   color: #aaaaaa;
   line-height: 1.4rem;
   display: block;
 }
 
-/* line 371, ../sass/_layout.scss */
+/* line 372, ../sass/_layout.scss */
 a {
   color: #4d77be;
   text-decoration: none;
 }
-/* line 375, ../sass/_layout.scss */
+/* line 376, ../sass/_layout.scss */
 a:hover, a:active {
   color: #4d77be;
   text-decoration: underline;
 }
 
 /* Icons Headings */
-/* line 384, ../sass/_layout.scss */
+/* line 385, ../sass/_layout.scss */
 i {
   position: relative;
   display: inline-block;
@@ -534,7 +535,7 @@ i {
   height: 3em;
   margin-right: 8px;
 }
-/* line 391, ../sass/_layout.scss */
+/* line 392, ../sass/_layout.scss */
 i:after {
   width: 3em;
   height: 3em;
@@ -545,14 +546,14 @@ i:after {
   z-index: 0;
 }
 
-/* line 402, ../sass/_layout.scss */
+/* line 403, ../sass/_layout.scss */
 i + h2 {
   display: inline-block;
   line-height: 2.25;
   vertical-align: top;
 }
 
-/* line 408, ../sass/_layout.scss */
+/* line 409, ../sass/_layout.scss */
 i:before {
   font-size: 1.75em;
   width: 1.75em;
