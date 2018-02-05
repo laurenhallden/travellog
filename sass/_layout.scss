@@ -137,6 +137,9 @@ section:last-child {
 		}
 		&--1x2 {
 			grid-row-end: span 2;
+			.image-wrapper {
+				padding-bottom: 150%;
+			}
 		}
 		&--2x1 {
 			grid-column-end: span 2;
