@@ -1,5 +1,5 @@
 # travellog
-An interactive map of everywhere you've traveled, with room for image galleries, descriptions and dates. You can see an example (of a very long, complicated travel log) at http://laurenhallden.com/travellog/
+An interactive map of everywhere you've traveled, with room for image galleries, descriptions and dates. You can see an example (of a very long, complicated travel log) at https://laurenhallden.com/2018travellog/
 
 ## What you'll need
 
