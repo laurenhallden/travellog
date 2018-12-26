@@ -21,3 +21,6 @@ An interactive map of everywhere you've traveled, with room for image galleries,
 - If you want to share your Travel Log on social media, don't forget to add your Log's url, your Twitter handle, etc in the **meta tags** section at the top of the `index.html` file.
 
 You're done! Have fun!
+
+## Changelog
+12/26/18 - Added an optional navigation, which you can use to jump to a different state or country.
