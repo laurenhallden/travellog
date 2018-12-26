@@ -126,7 +126,7 @@
       <!-- This is the end! -->
       <div class="section end">
         <h4 class="h2">The end</h4>
-        <p>Travel Log designed by <a href="http://www.laurenhallden.com">Lauren Hallden</a>.</p>
+        <p>Travel Log designed by <a href="https:/laurenhallden.com" title="Lauren Hallden, Designer">Lauren Hallden</a>.</p>
         <p>Want to make one of these?<br />
           <a title="Travel Log GitHub Repo" href="https://github.com/laurenhallden/travellog">Grab the code</a>
         </p>
@@ -205,7 +205,19 @@
     if (theId === activeChapterName) return;
     map.flyTo(chapters[theId]);
     activeChapterName = theId;
-  }
+  };
+
+  // Open and close the optional navigation
+
+  $('.toggle').click(function() {
+    $(this).toggleClass('open');
+    $('.menu').toggleClass('open');
+  });
+
+  $('.menu .nav-icon').click(function() {
+    $('.toggle').removeClass('open');
+    $('.menu').removeClass('open');
+  });
 
 </script>
 

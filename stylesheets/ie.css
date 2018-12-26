@@ -2,9 +2,9 @@
 Error: File to import not found or unreadable: internetexplorer.
        Load paths:
          Compass::SpriteImporter
-         /Users/laurenhallden/Workspace/travellog/sass
+         /Users/laurenhallden/Workspace/travellog1/sass
          /Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets
-        on line 7 of /Users/laurenhallden/Workspace/travellog/sass/ie.scss
+        on line 7 of /Users/laurenhallden/Workspace/travellog1/sass/ie.scss
 
 2:  * Import this file using the following HTML or equivalent:
 3:  * <!--[if IE]>
@@ -14,9 +14,9 @@ Error: File to import not found or unreadable: internetexplorer.
 7: @import "internetexplorer";
 
 Backtrace:
-/Users/laurenhallden/Workspace/travellog/sass/ie.scss:7
+/Users/laurenhallden/Workspace/travellog1/sass/ie.scss:7
 /Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:45:in `import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:44:in `import'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
@@ -47,15 +47,19 @@ Backtrace:
 /Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:294:in `watch'
+/Library/Ruby/Gems/2.3.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
+/Library/Ruby/Gems/2.3.0/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
+/Library/Ruby/Gems/2.3.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/2.3.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/2.3.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/2.3.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/2.3.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/Library/Ruby/Gems/2.3.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/usr/local/bin/compass:22:in `load'
+/usr/local/bin/compass:22:in `<main>'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: internetexplorer.\A        Load paths:\A          Compass::SpriteImporter\A          /Users/laurenhallden/Workspace/travellog/sass\A          /Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets\A         on line 7 of /Users/laurenhallden/Workspace/travellog/sass/ie.scss\A \A 2:  * Import this file using the following HTML or equivalent:\A 3:  * <!--[if IE]>\A 4:  *   <link href=\"/stylesheets/ie.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" />\A 5:  * <![endif]--> */\A 6: \A 7: @import \"internetexplorer\";"; }
+  content: "Error: File to import not found or unreadable: internetexplorer.\A        Load paths:\A          Compass::SpriteImporter\A          /Users/laurenhallden/Workspace/travellog1/sass\A          /Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets\A         on line 7 of /Users/laurenhallden/Workspace/travellog1/sass/ie.scss\A \A 2:  * Import this file using the following HTML or equivalent:\A 3:  * <!--[if IE]>\A 4:  *   <link href=\"/stylesheets/ie.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" />\A 5:  * <![endif]--> */\A 6: \A 7: @import \"internetexplorer\";"; }

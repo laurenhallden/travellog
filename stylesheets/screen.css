@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -75,8 +76,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 100vh;
   margin-left: calc(100% /3);
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
   background-color: #fafafa;
+  -webkit-overflow-scrolling: touch;
 }
 @media screen and (max-width: 767px) {
   /* line 19, ../sass/_layout.scss */
@@ -161,7 +162,7 @@ section .box:nth-child(6),
   section,
   .section {
     display: block;
-    margin-bottom: 100vh;
+    margin-bottom: 85vh;
     background: white;
     max-width: calc(100% - 40px);
   }
@@ -192,127 +193,223 @@ section:last-child {
   margin-bottom: 200px;
 }
 
-/* These are the sections with the location icons and headlings */
-/* line 105, ../sass/_layout.scss */
-.section {
+/* This is the navigation section */
+/* line 108, ../sass/_layout.scss */
+section#intro {
+  padding-top: 120px;
+}
+/* line 112, ../sass/_layout.scss */
+section.navigation {
+  position: fixed;
+  right: 0px;
+  top: 5px;
+  width: auto;
+  opacity: 1;
+  z-index: 5;
+  padding: 10px;
+  border-bottom: 0px;
+  background: transparent !important;
+}
+/* line 123, ../sass/_layout.scss */
+section.navigation .toggle {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 22px;
+  color: #dddddd;
+}
+/* line 131, ../sass/_layout.scss */
+section.navigation .toggle:after {
+  content: "☰";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+/* line 140, ../sass/_layout.scss */
+section.navigation .toggle:hover {
+  color: #cbcbcb;
+  text-decoration: none;
+}
+/* line 145, ../sass/_layout.scss */
+section.navigation .toggle.open {
+  color: #cbcbcb;
+}
+/* line 148, ../sass/_layout.scss */
+section.navigation .toggle.open:after {
+  content: "✕";
+}
+@media screen and (max-width: 767px) {
+  /* line 123, ../sass/_layout.scss */
+  section.navigation .toggle {
+    color: #444444;
+  }
+  /* line 156, ../sass/_layout.scss */
+  section.navigation .toggle:after {
+    padding: 8px 10px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  }
+  /* line 162, ../sass/_layout.scss */
+  section.navigation .toggle.open {
+    color: #444444;
+  }
+}
+/* line 169, ../sass/_layout.scss */
+section.navigation .menu {
+  display: none;
+  margin-right: 40px;
+  padding: 15px 10px 10px 15px;
+  background: white;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+/* line 177, ../sass/_layout.scss */
+section.navigation .menu.open {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  /* line 169, ../sass/_layout.scss */
+  section.navigation .menu {
+    margin-right: 50px;
+  }
+}
+/* line 191, ../sass/_layout.scss */
+section.navigation .nav-icon:hover i::after {
+  background: #b6b6a4;
+}
+/* line 197, ../sass/_layout.scss */
+section.navigation i {
+  font-size: 0.45rem;
+}
+
+/* These are the sections with the location icons and headings */
+/* line 205, ../sass/_layout.scss */
+.section.state {
+  padding-top: 100px;
+  padding-top: 100px;
+  margin-top: -50px;
+  /* we do this so using the nav to jump to anchors won't cut off the headings */
   margin-bottom: -120px;
 }
 @media screen and (max-width: 767px) {
-  /* line 105, ../sass/_layout.scss */
-  .section {
-    padding: 50px 20px;
+  /* line 205, ../sass/_layout.scss */
+  .section.state {
+    padding: 100px 20px 50px 20px;
     margin-bottom: -65px;
   }
 }
 
-/* line 114, ../sass/_layout.scss */
+/* line 217, ../sass/_layout.scss */
 .grid {
   margin-top: 4em;
   width: 100%;
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
+  grid-gap: 4px;
   grid-auto-flow: dense;
 }
-/* line 123, ../sass/_layout.scss */
+/* line 226, ../sass/_layout.scss */
 .grid .box {
   grid-column-start: auto;
   /* These are all our potential image box sizes */
   /* Mobile styles */
 }
-/* line 126, ../sass/_layout.scss */
+/* line 229, ../sass/_layout.scss */
 .grid .box .image-wrapper {
   background-position: center;
   background-size: cover;
 }
-/* line 132, ../sass/_layout.scss */
+/* line 235, ../sass/_layout.scss */
 .grid .box--1x1 {
   /* Padding needs to be applied to inner divs */
 }
-/* line 134, ../sass/_layout.scss */
+/* line 237, ../sass/_layout.scss */
 .grid .box--1x1 .image-wrapper {
   padding-bottom: 100%;
 }
-/* line 138, ../sass/_layout.scss */
+/* line 241, ../sass/_layout.scss */
 .grid .box--1x2 {
   grid-row-end: span 2;
 }
-/* line 140, ../sass/_layout.scss */
+/* line 243, ../sass/_layout.scss */
 .grid .box--1x2 .image-wrapper {
   padding-bottom: 150%;
 }
-/* line 144, ../sass/_layout.scss */
+/* line 247, ../sass/_layout.scss */
 .grid .box--2x1 {
   grid-column-end: span 2;
 }
-/* line 146, ../sass/_layout.scss */
+/* line 249, ../sass/_layout.scss */
 .grid .box--2x1 .image-wrapper {
   padding-bottom: calc(50% - 2px);
 }
-/* line 150, ../sass/_layout.scss */
+/* line 253, ../sass/_layout.scss */
 .grid .box--2x2 {
   grid-column-end: span 2;
   grid-row-end: span 2;
 }
-/* line 153, ../sass/_layout.scss */
+/* line 256, ../sass/_layout.scss */
 .grid .box--2x2 .image-wrapper {
   padding-bottom: 100%;
 }
-/* line 157, ../sass/_layout.scss */
+/* line 260, ../sass/_layout.scss */
 .grid .box--3x1 {
   grid-column-end: span 3;
 }
-/* line 159, ../sass/_layout.scss */
+/* line 262, ../sass/_layout.scss */
 .grid .box--3x1 .image-wrapper {
   padding-bottom: 33.33%;
 }
-/* line 163, ../sass/_layout.scss */
+/* line 266, ../sass/_layout.scss */
 .grid .box--3x2 {
   grid-column-end: span 3;
 }
-/* line 165, ../sass/_layout.scss */
+/* line 268, ../sass/_layout.scss */
 .grid .box--3x2 .image-wrapper {
   padding-bottom: 66.66%;
 }
-/* line 169, ../sass/_layout.scss */
+/* line 272, ../sass/_layout.scss */
 .grid .box--3x3 {
   grid-column-end: span 3;
 }
-/* line 171, ../sass/_layout.scss */
+/* line 274, ../sass/_layout.scss */
 .grid .box--3x3 .image-wrapper {
   padding-bottom: 100%;
 }
 @media screen and (max-width: 767px) {
-  /* line 176, ../sass/_layout.scss */
+  /* line 279, ../sass/_layout.scss */
   .grid .box--1x1, .grid .box--1x2, .grid .box--2x2, .grid .box--3x3 {
     grid-column-end: span 3;
   }
-  /* line 182, ../sass/_layout.scss */
+  /* line 285, ../sass/_layout.scss */
   .grid .box--1x1 .image-wrapper, .grid .box--1x2 .image-wrapper, .grid .box--2x2 .image-wrapper, .grid .box--3x3 .image-wrapper {
     padding-bottom: 100%;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 187, ../sass/_layout.scss */
+  /* line 290, ../sass/_layout.scss */
   .grid .box--2x1, .grid .box--3x1, .grid .box--3x2 {
     grid-column-end: span 3;
   }
-  /* line 192, ../sass/_layout.scss */
+  /* line 295, ../sass/_layout.scss */
   .grid .box--2x1 .image-wrapper, .grid .box--3x1 .image-wrapper, .grid .box--3x2 .image-wrapper {
     padding-bottom: 66.66%;
   }
 }
 
 /* A mess of styles for browsers that don't support grid */
-/* line 201, ../sass/_layout.scss */
+/* line 304, ../sass/_layout.scss */
 .no-cssgrid .grid,
 .cssgridlegacy .grid {
   display: block;
   font-size: 0;
   margin-top: 50px;
 }
-/* line 208, ../sass/_layout.scss */
+/* line 311, ../sass/_layout.scss */
 .no-cssgrid .grid .box,
 .cssgridlegacy .grid .box {
   width: calc(100% /3 - 6px);
@@ -322,84 +419,84 @@ section:last-child {
   background-color: #fafafa;
   /* Mobile styles */
 }
-/* line 215, ../sass/_layout.scss */
+/* line 318, ../sass/_layout.scss */
 .no-cssgrid .grid .box .image-wrapper,
 .cssgridlegacy .grid .box .image-wrapper {
   background-size: cover;
   background-position: center;
 }
-/* line 220, ../sass/_layout.scss */
+/* line 323, ../sass/_layout.scss */
 .no-cssgrid .grid .box--1x1,
 .cssgridlegacy .grid .box--1x1 {
   width: calc(100% /3 - 6px);
 }
-/* line 222, ../sass/_layout.scss */
+/* line 325, ../sass/_layout.scss */
 .no-cssgrid .grid .box--1x1 .image-wrapper,
 .cssgridlegacy .grid .box--1x1 .image-wrapper {
   padding-bottom: 100%;
 }
-/* line 226, ../sass/_layout.scss */
+/* line 329, ../sass/_layout.scss */
 .no-cssgrid .grid .box--1x2,
 .cssgridlegacy .grid .box--1x2 {
   width: calc(100% /3 - 6px);
 }
-/* line 228, ../sass/_layout.scss */
+/* line 331, ../sass/_layout.scss */
 .no-cssgrid .grid .box--1x2 .image-wrapper,
 .cssgridlegacy .grid .box--1x2 .image-wrapper {
   padding-bottom: 100%;
 }
-/* line 232, ../sass/_layout.scss */
+/* line 335, ../sass/_layout.scss */
 .no-cssgrid .grid .box--2x1,
 .cssgridlegacy .grid .box--2x1 {
   width: calc(100% *2/3 - 8px);
 }
-/* line 234, ../sass/_layout.scss */
+/* line 337, ../sass/_layout.scss */
 .no-cssgrid .grid .box--2x1 .image-wrapper,
 .cssgridlegacy .grid .box--2x1 .image-wrapper {
   padding-bottom: calc(50% - 2px);
 }
-/* line 238, ../sass/_layout.scss */
+/* line 341, ../sass/_layout.scss */
 .no-cssgrid .grid .box--2x2,
 .cssgridlegacy .grid .box--2x2 {
   width: calc(100% /3 - 6px);
 }
-/* line 240, ../sass/_layout.scss */
+/* line 343, ../sass/_layout.scss */
 .no-cssgrid .grid .box--2x2 .image-wrapper,
 .cssgridlegacy .grid .box--2x2 .image-wrapper {
   padding-bottom: 100%;
 }
-/* line 244, ../sass/_layout.scss */
+/* line 347, ../sass/_layout.scss */
 .no-cssgrid .grid .box--3x1,
 .cssgridlegacy .grid .box--3x1 {
   width: calc(100% - 10px);
 }
-/* line 246, ../sass/_layout.scss */
+/* line 349, ../sass/_layout.scss */
 .no-cssgrid .grid .box--3x1 .image-wrapper,
 .cssgridlegacy .grid .box--3x1 .image-wrapper {
   padding-bottom: 33.33%;
 }
-/* line 250, ../sass/_layout.scss */
+/* line 353, ../sass/_layout.scss */
 .no-cssgrid .grid .box--3x2,
 .cssgridlegacy .grid .box--3x2 {
   width: calc(100% - 10px);
 }
-/* line 252, ../sass/_layout.scss */
+/* line 355, ../sass/_layout.scss */
 .no-cssgrid .grid .box--3x2 .image-wrapper,
 .cssgridlegacy .grid .box--3x2 .image-wrapper {
   padding-bottom: 66.66%;
 }
-/* line 256, ../sass/_layout.scss */
+/* line 359, ../sass/_layout.scss */
 .no-cssgrid .grid .box--3x3,
 .cssgridlegacy .grid .box--3x3 {
   width: calc(100% - 10px);
 }
-/* line 258, ../sass/_layout.scss */
+/* line 361, ../sass/_layout.scss */
 .no-cssgrid .grid .box--3x3 .image-wrapper,
 .cssgridlegacy .grid .box--3x3 .image-wrapper {
   padding-bottom: 100%;
 }
 @media screen and (max-width: 767px) {
-  /* line 263, ../sass/_layout.scss */
+  /* line 366, ../sass/_layout.scss */
   .no-cssgrid .grid .box--1x1, .no-cssgrid .grid .box--1x2, .no-cssgrid .grid .box--2x2, .no-cssgrid .grid .box--3x3,
   .cssgridlegacy .grid .box--1x1,
   .cssgridlegacy .grid .box--1x2,
@@ -407,7 +504,7 @@ section:last-child {
   .cssgridlegacy .grid .box--3x3 {
     width: 100%;
   }
-  /* line 269, ../sass/_layout.scss */
+  /* line 372, ../sass/_layout.scss */
   .no-cssgrid .grid .box--1x1 .image-wrapper, .no-cssgrid .grid .box--1x2 .image-wrapper, .no-cssgrid .grid .box--2x2 .image-wrapper, .no-cssgrid .grid .box--3x3 .image-wrapper,
   .cssgridlegacy .grid .box--1x1 .image-wrapper,
   .cssgridlegacy .grid .box--1x2 .image-wrapper,
@@ -417,14 +514,14 @@ section:last-child {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 274, ../sass/_layout.scss */
+  /* line 377, ../sass/_layout.scss */
   .no-cssgrid .grid .box--2x1, .no-cssgrid .grid .box--3x1, .no-cssgrid .grid .box--3x2,
   .cssgridlegacy .grid .box--2x1,
   .cssgridlegacy .grid .box--3x1,
   .cssgridlegacy .grid .box--3x2 {
     width: 100%;
   }
-  /* line 279, ../sass/_layout.scss */
+  /* line 382, ../sass/_layout.scss */
   .no-cssgrid .grid .box--2x1 .image-wrapper, .no-cssgrid .grid .box--3x1 .image-wrapper, .no-cssgrid .grid .box--3x2 .image-wrapper,
   .cssgridlegacy .grid .box--2x1 .image-wrapper,
   .cssgridlegacy .grid .box--3x1 .image-wrapper,
@@ -433,33 +530,33 @@ section:last-child {
   }
 }
 
-/* line 287, ../sass/_layout.scss */
+/* line 390, ../sass/_layout.scss */
 .end {
   text-align: center;
 }
-/* line 290, ../sass/_layout.scss */
+/* line 393, ../sass/_layout.scss */
 .end .h1, .end .h2 {
   color: #444444;
   padding-bottom: 1rem;
 }
-/* line 295, ../sass/_layout.scss */
+/* line 398, ../sass/_layout.scss */
 .end p {
   color: #c9c9c9;
   font-size: 0.8rem;
   margin-bottom: 0.5rem;
 }
-/* line 300, ../sass/_layout.scss */
+/* line 403, ../sass/_layout.scss */
 .end p a {
   color: #c9c9c9;
   text-decoration: underline;
 }
-/* line 304, ../sass/_layout.scss */
+/* line 407, ../sass/_layout.scss */
 .end p a:hover, .end p a:active {
   color: #aaaaaa;
 }
 
 /* Type */
-/* line 314, ../sass/_layout.scss */
+/* line 417, ../sass/_layout.scss */
 html,
 body {
   font-family: -apple-system,  BlinkMacSystemFont,  "Segoe UI",  Roboto,  Oxygen-Sans,  Ubuntu,  Cantarell,  "Helvetica Neue",  sans-serif;
@@ -467,26 +564,26 @@ body {
   color: #444444;
 }
 
-/* line 329, ../sass/_layout.scss */
+/* line 432, ../sass/_layout.scss */
 p {
   font-size: 1rem;
   line-height: 1.4;
   margin-bottom: 1em;
 }
 
-/* line 335, ../sass/_layout.scss */
+/* line 438, ../sass/_layout.scss */
 em {
   font-style: italic;
 }
 
-/* line 339, ../sass/_layout.scss */
+/* line 442, ../sass/_layout.scss */
 h1, h2, h3, h4 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.4;
 }
 
-/* line 345, ../sass/_layout.scss */
+/* line 448, ../sass/_layout.scss */
 h1, .h1 {
   display: block;
   font-size: 1.75rem;
@@ -496,7 +593,7 @@ h1, .h1 {
   line-height: 1.2;
 }
 
-/* line 354, ../sass/_layout.scss */
+/* line 457, ../sass/_layout.scss */
 h2, .h2 {
   font-size: 1rem;
   padding-bottom: 10px;
@@ -506,7 +603,7 @@ h2, .h2 {
   letter-spacing: 1px;
 }
 
-/* line 363, ../sass/_layout.scss */
+/* line 466, ../sass/_layout.scss */
 h3, .h3 {
   font-size: 1.2rem;
   padding-bottom: 10px;
@@ -516,26 +613,26 @@ h3, .h3 {
   letter-spacing: 0.025rem;
 }
 
-/* line 372, ../sass/_layout.scss */
+/* line 475, ../sass/_layout.scss */
 .date {
   color: #aaaaaa;
   line-height: 1.4rem;
   display: block;
 }
 
-/* line 378, ../sass/_layout.scss */
+/* line 481, ../sass/_layout.scss */
 a {
   color: #4d77be;
   text-decoration: none;
 }
-/* line 382, ../sass/_layout.scss */
+/* line 485, ../sass/_layout.scss */
 a:hover, a:active {
   color: #4d77be;
   text-decoration: underline;
 }
 
 /* Icons Headings */
-/* line 391, ../sass/_layout.scss */
+/* line 494, ../sass/_layout.scss */
 i {
   position: relative;
   display: inline-block;
@@ -543,7 +640,7 @@ i {
   height: 3em;
   margin-right: 8px;
 }
-/* line 398, ../sass/_layout.scss */
+/* line 501, ../sass/_layout.scss */
 i:after {
   width: 3em;
   height: 3em;
@@ -554,14 +651,14 @@ i:after {
   z-index: 0;
 }
 
-/* line 409, ../sass/_layout.scss */
+/* line 512, ../sass/_layout.scss */
 i + h2 {
   display: inline-block;
   line-height: 2.25;
   vertical-align: top;
 }
 
-/* line 415, ../sass/_layout.scss */
+/* line 518, ../sass/_layout.scss */
 i:before {
   font-size: 1.75em;
   width: 1.75em;

@@ -21,14 +21,14 @@ $blue:					#4d77be;
 	height: 100vh;
 	margin-left: calc(100% /3);
 	overflow-y: scroll;
+	background-color: $background-gray;
 	-webkit-overflow-scrolling: touch;
-    background-color: $background-gray;
 
-    @media #{$break-mobile-large} {
-    	background: transparent;
-    	width: 100%;
-    	margin-left: 0;
-    }
+	@media #{$break-mobile-large} {
+		background: transparent;
+		width: 100%;
+		margin-left: 0;
+	}
 }
 
 #map {
@@ -75,7 +75,7 @@ section,
 
 	@media #{$break-mobile-large} {
 		display: block;
-		margin-bottom: 100vh;
+		margin-bottom: 85vh;
 		background: white;
 		max-width: calc(100% - 40px);
 	}
@@ -101,12 +101,115 @@ section:last-child {
     margin-bottom: 200px;
 }
 
-/* These are the sections with the location icons and headlings */
-.section {
+/* This is the navigation section */
+
+section {
+
+	&#intro {
+		padding-top: 120px;
+	}
+
+	&.navigation {
+		position: fixed;
+		right: 0px;
+		top: 5px;
+		width: auto;
+		opacity: 1;
+		z-index: 5;
+		padding: 10px;
+		border-bottom: 0px;
+		background: transparent !important;
+
+		.toggle {
+			cursor: pointer;
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			font-size: 22px;
+			color: #dddddd;
+
+			&:after {
+				content: "☰";
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				padding: 2px 5px;
+				border-radius: 3px;
+			}
+
+			&:hover {
+				color: #cbcbcb;
+				text-decoration: none;
+			}
+
+			&.open {
+				color: #cbcbcb;
+
+				&:after {
+					content: "✕";
+				}
+			}
+
+			@media #{$break-mobile-large} {
+				color: #444444;
+
+				&:after {
+					padding: 8px 10px;
+					background-color: #ffffff;
+					box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+				}
+
+				&.open {
+					color: #444444;
+				}
+
+			}
+		}
+
+		.menu {
+			display: none;
+			margin-right: 40px;
+			padding: 15px 10px 10px 15px;
+			background: white;
+			box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+			border-radius: 5px;
+
+			&.open {
+				display: block;
+			}
+
+			@media #{$break-mobile-large} {
+				margin-right: 50px;
+			}
+		}
+
+		.nav-icon {
+
+			&:hover {
+
+				i {
+					&::after {
+						background: #b6b6a4;
+					}
+				}
+			}
+		}
+		i {
+			font-size: 0.45rem;
+
+		}
+	}
+}
+
+/* These are the sections with the location icons and headings */
+.section.state {
+	padding-top: 100px;
+	padding-top: 100px;
+	margin-top: -50px; /* we do this so using the nav to jump to anchors won't cut off the headings */
 	margin-bottom: -120px;
 
 	@media #{$break-mobile-large} {
-		padding: 50px 20px;
+		padding: 100px 20px 50px 20px;
 		margin-bottom: -65px;
 	}
 }
@@ -117,7 +220,7 @@ section:last-child {
 	display: -ms-grid;
   	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 5px;
+	grid-gap: 4px;
 	grid-auto-flow: dense;
 
 	.box {
@@ -406,19 +509,19 @@ i {
 	}
 }
 
-i+h2{
+i+h2 {
 	display: inline-block;
 	line-height: 2.25;
 	vertical-align: top;
 }
 
 i:before {
-font-size: 1.75em;
-width: 1.75em;
-text-align: center;
-position: absolute;
-left: 0;
-top: 0.35em;
-color: white;
-z-index: 1;
+	font-size: 1.75em;
+	width: 1.75em;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0.35em;
+	color: white;
+	z-index: 1;
 }
